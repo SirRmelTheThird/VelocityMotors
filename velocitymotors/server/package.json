@@ -1,7 +1,7 @@
 {
   "name": "velocitymotors-server",
   "version": "1.0.0",
-  "description": "Backend API for the VelocityMotors vehicle marketplace application",
+  "description": "Backend API for the Velocity Motors vehicle marketplace application",
   "main": "server.js",
   "scripts": {
     "wipe": "mocha ./tests/database.refresh.js --reporter spec --log-level=warn --timeout 10000",
