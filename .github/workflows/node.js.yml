@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./velocitymotors/server
+        working-directory: ./VelocityMotors/server
 
     steps:
       - name: Checkout repository
@@ -44,7 +44,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./velocitymotors/client
+        working-directory: ./VelocityMotors/client
 
     steps:
       - name: Checkout repository
