@@ -17,8 +17,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -30,6 +28,12 @@ jobs:
 
       - name: Wipe test database
         run: npm run wipe
+
+      - name: Start server
+        run: nohup node server.js > server.log 2>&1 &
+
+      - name: Wait for server
+        run: sleep 5
 
       - name: Run server tests
         run: npm test
@@ -45,8 +49,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
