@@ -1,31 +1,25 @@
 {
-  "name": "auctionary_starter",
+  "name": "velocitymotors-server",
   "version": "1.0.0",
-  "description": "The Auctionary API for the 25/25 Full Stack Web Development assignment",
+  "description": "Backend API for the VelocityMotors vehicle marketplace application",
   "main": "server.js",
   "scripts": {
     "wipe": "mocha ./tests/database.refresh.js --reporter spec --log-level=warn --timeout 10000",
     "test": "mocha ./tests/test.*.js --reporter spec --log-level=warn --timeout 10000",
     "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ash-williams/auctionary_starter.git"
-  },
   "keywords": [
-    "auctionary",
+    "velocitymotors",
+    "vehicles",
+    "cars",
+    "marketplace",
+    "automotive",
     "api",
-    "assignment",
-    "full",
-    "stack",
-    "web"
+    "express",
+    "sqlite"
   ],
-  "author": "Ash Williams",
+  "author": "Armel Bissaka",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ash-williams/auctionary_starter/issues"
-  },
-  "homepage": "https://github.com/ash-williams/auctionary_starter#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "chai": "^4.3.8",
@@ -34,10 +28,14 @@
     "express": "^4.18.2",
     "joi": "^17.10.2",
     "leo-profanity": "^1.8.0",
-    "mocha": "^10.2.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
-    "sqlite3": "^5.1.6",
-    "vue-router": "^4.6.4"
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^11.3.0"
+  },
+  "overrides": {
+  "serialize-javascript": "7.0.5"
   }
 }

@@ -1,0 +1,33 @@
+# Dependencies
+client/node_modules/
+server/node_modules/
+
+# Environment variables
+client/.env
+server/.env
+.env
+
+# Build output
+client/dist/
+server/dist/
+
+# Database
+server/*.sqlite
+server/*.sqlite3
+server/*.db
+server/*.db-journal
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
