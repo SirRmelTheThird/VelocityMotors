@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -25,9 +27,6 @@ jobs:
 
       - name: Install server dependencies
         run: npm install
-
-      - name: Delete existing database
-        run: rm -f ./database/*.db ./database/*.sqlite ./database/*.sqlite3
 
       - name: Wipe test database
         run: npm run wipe
@@ -46,6 +45,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
