@@ -12,10 +12,11 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./client
+        working-directory: ./velocitymotors/client
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -33,10 +34,11 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./server
+        working-directory: ./velocitymotors/server
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Use Node.js
         uses: actions/setup-node@v4
