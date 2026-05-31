@@ -9,7 +9,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
     }else{
         console.log('Connected to the SQLite database.')
 
-        db.run(`CREATE TABLE users (
+        db.run(`CREATE TABLE IF NOT EXISTS users (
                 user_id INTEGER PRIMARY KEY AUTOINCREMENT,
                 first_name text,
                 last_name text,
@@ -28,7 +28,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
         );
 
         
-        db.run(`CREATE TABLE items (
+        db.run(`CREATE TABLE IF NOT EXISTS items (
                 item_id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT,
                 description TEXT,
@@ -46,7 +46,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
             }
         );
 
-        db.run(`CREATE TABLE bids (
+        db.run(`CREATE TABLE IF NOT EXISTS bids (
                 item_id INTEGER,
                 user_id INTEGER,
                 amount INTEGER,
@@ -64,7 +64,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
             }
         );
 
-        db.run(`CREATE TABLE questions (
+        db.run(`CREATE TABLE IF NOT EXISTS questions (
                 question_id INTEGER PRIMARY KEY AUTOINCREMENT,
                 question TEXT,
                 answer TEXT,
