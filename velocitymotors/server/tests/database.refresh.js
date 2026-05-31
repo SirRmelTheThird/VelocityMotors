@@ -1,78 +1,46 @@
 const db = require("../database");
 
-let count = 0
+console.log("****************************************");
+console.log("Deleting data...");
 
-console.log("****************************************")
-console.log("Deleting data...")  
+setTimeout(() => {
+    db.serialize(() => {
+        db.run("DELETE FROM questions", [], function (err) {
+            if (err) throw err;
+            console.log("Questions: All data deleted");
+        });
 
-const sql = 'DELETE FROM questions'
+        db.run("DELETE FROM bids", [], function (err) {
+            if (err) throw err;
+            console.log("Bids: All data deleted");
+        });
 
-db.run(sql, [], function(err){
-    if(err) throw err
+        db.run("DELETE FROM items", [], function (err) {
+            if (err) throw err;
+            console.log("Items: All data deleted");
+        });
 
-    console.log("Questions: All data deleted")
-    count++
+        db.run("DELETE FROM users", [], function (err) {
+            if (err) throw err;
+            console.log("Users: All data deleted");
+        });
 
-    const sql = 'DELETE FROM bids'
+        db.run("UPDATE sqlite_sequence SET seq = 0 WHERE name = 'users'", [], function (err) {
+            if (err) throw err;
+            console.log("Users: reset ID counter");
+        });
 
-    db.run(sql, [], function(err){
-        if(err) throw err
-    
-        console.log("Bids: All data deleted")
-        count++
-    
-        const sql = 'DELETE FROM items'
-    
-        db.run(sql, [], function(err){
-            if(err) throw err
-        
-            console.log("Items: All data deleted")
-            count++
+        db.run("UPDATE sqlite_sequence SET seq = 0 WHERE name = 'items'", [], function (err) {
+            if (err) throw err;
+            console.log("Items: reset ID counter");
+        });
 
-            const sql = 'DELETE FROM users'
-    
-            db.run(sql, [], function(err){
-                if(err) throw err
-        
-                console.log("Users: All data deleted")
-                count++
+        db.run("UPDATE sqlite_sequence SET seq = 0 WHERE name = 'questions'", [], function (err) {
+            if (err) throw err;
+            console.log("Questions: reset ID counter");
+        });
 
-                const sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'users'";
-
-                db.run(sql, [], function(err){
-                    if(err) throw err
-
-                    console.log("Users: reset ID counter")
-                    count++
-
-                    const sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'items'";
-                    db.run(sql, [], function(err){
-                        if(err) throw err
-
-                        console.log("Items: reset ID counter")
-                        count++
-
-                        const sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'bids'";
-                        db.run(sql, [], function(err){
-                            if(err) throw err
-
-                            console.log("Bids: reset ID counter")
-                            count++
-
-                            const sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'questions'";
-                            db.run(sql, [], function(err){
-                                if(err) throw err
-
-                                console.log("Questions: reset ID counter")
-                                count++
-
-                                console.log("All data deleted from all tables") 
-                                console.log("****************************************")
-                            })
-                        })
-                    })
-                })       
-            })
-        })
-    })
-})
+        console.log("All data deleted from all tables");
+        console.log("****************************************");
+    });
+}, 1000);
