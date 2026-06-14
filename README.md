@@ -10,11 +10,11 @@
 
 </div>
 
-Velocity Motors is a full-stack vehicle marketplace application. The project is split into a Vue/Vite client and a Node.js/Express server that uses SQLite.
-
 ## 📖 Overview
 
-Velocity Motors lets users work with a vehicle marketplace through a modern frontend and a backend API. The client handles the user interface, routing, and page experience, while the server handles API logic, validation, database access, logging, and tests.
+Velocity Motors is a full-stack vehicle marketplace application. The project is split into a Vue/ client and Node/Express server that uses SQLite.
+
+Letting users work with a vehicle marketplace through a modern frontend and a backend API. The client handles the user interface, routing, and page experience, while the server handles API logic, validation, database access, logging, and tests.
 
 The client and server run separately, so you will usually need two terminals open while developing the project.
 
@@ -36,14 +36,14 @@ The client and server run separately, so you will usually need two terminals ope
 
 | Folder | Description |
 |---|---|
-| `client` | Vue/Vite frontend application |
-| `server` | Node.js/Express backend application |
+| `client` | Vue |
+| `server` | REST API |
 
 ## 🛠️ Technologies Used
 
 ### Client
 
-- VueJS
+- Vue
 - Bootstrap
 - Email Validator
 
@@ -65,9 +65,8 @@ The client and server run separately, so you will usually need two terminals ope
 Before running the application, make sure you have these installed:
 
 - Git
-- Node.js
+- Node
 - NPM
-- VS Code
 
 The client requires:
 
