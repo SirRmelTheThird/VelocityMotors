@@ -97,9 +97,29 @@ cd VelocityMotors
 
 ## 🚀 Running the Project
 
-The client and server must be run separately using two terminals.
+The server and client must be run separately using two terminals.
 
-### Terminal 1: Run the Client
+### Terminal 1: Run the Server
+
+Open a second terminal from the root project folder, then move into the server folder:
+
+```bash
+cd server
+```
+
+Install the server dependencies:
+
+```bash
+npm install
+```
+
+Start the server in development mode:
+
+```bash
+npm run dev
+```
+
+### Terminal 2: Run the Client
 
 Move into the client folder:
 
@@ -126,26 +146,6 @@ http://localhost:5173
 ```
 
 Open the URL shown in your terminal.
-
-### Terminal 2: Run the Server
-
-Open a second terminal from the root project folder, then move into the server folder:
-
-```bash
-cd server
-```
-
-Install the server dependencies:
-
-```bash
-npm install
-```
-
-Start the server in development mode:
-
-```bash
-npm run dev
-```
 
 This runs the server with Nodemon, so backend files restart automatically when changed.
 
