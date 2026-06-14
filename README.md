@@ -10,6 +10,8 @@
 
 </div>
 
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/6b6c5126-d30c-435a-8232-ecc67a6281f3" />
+
 ## 📖 Overview
 
 Velocity Motors is a full-stack vehicle marketplace application. The project is split into a Vue client and Node/Express server that uses SQLite.
