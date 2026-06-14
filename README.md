@@ -1,8 +1,46 @@
-# Velocity Motors
+<div align="center">
 
-Velocity Motors is a full-stack vehicle marketplace application. The project contains a separate Vue/Vite client folder and a Node.js/Express server folder using SQLite.
+# 🚗 Velocity Motors
 
-## Technologies Used
+![Vue](https://img.shields.io/badge/Vue-3-42B883)
+![Vite](https://img.shields.io/badge/Vite-Client-646CFF)
+![Node.js](https://img.shields.io/badge/Node.js-Server-339933)
+![Express](https://img.shields.io/badge/Express-API-000000)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57)
+
+</div>
+
+Velocity Motors is a full-stack vehicle marketplace application. The project is split into a Vue/Vite client and a Node.js/Express server that uses SQLite.
+
+## 📖 Overview
+
+Velocity Motors lets users work with a vehicle marketplace through a modern frontend and a backend API. The client handles the user interface, routing, and page experience, while the server handles API logic, validation, database access, logging, and tests.
+
+The client and server run separately, so you will usually need two terminals open while developing the project.
+
+## ✨ Features
+
+- Vue 3 frontend
+- Vite development server
+- Vue Router page navigation
+- Bootstrap styling
+- Bootstrap Icons support
+- Node.js and Express backend
+- SQLite database
+- Server-side validation with Joi
+- Backend tests using Mocha, Chai, and Chai HTTP
+- Development logging with Morgan
+- Automatic server restarts with Nodemon
+- CORS support for client and server communication
+
+## 🗂️ Project Structure
+
+| Folder | Description |
+|---|---|
+| `client` | Vue/Vite frontend application |
+| `server` | Node.js/Express backend application |
+
+## 🛠️ Technologies Used
 
 ### Client
 
@@ -27,9 +65,9 @@ Velocity Motors is a full-stack vehicle marketplace application. The project con
 - Morgan
 - Leo Profanity
 
-## Requirements
+## ✅ Requirements
 
-Before running the application, make sure you have the following installed:
+Before running the application, make sure you have these installed:
 
 - Git
 - Node.js
@@ -38,7 +76,7 @@ Before running the application, make sure you have the following installed:
 
 The client requires:
 
-```bash
+```text
 Node ^20.19.0 or >=22.12.0
 ```
 
@@ -49,18 +87,25 @@ node --version
 npm --version
 ```
 
-## Clone the Repository
+## 📥 Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/SirRmelTheThird/VelocityMotors.git
+```
+
+Open the project folder:
+
+```bash
 cd VelocityMotors
 ```
 
-## Install and Run the Client
+## 🚀 Running the Project
 
 The client and server must be run separately using two terminals.
 
-Open a terminal from the root project folder.
+### Terminal 1: Run the Client
 
 Move into the client folder:
 
@@ -80,21 +125,17 @@ Start the client development server:
 npm run dev
 ```
 
-This runs the Vite development server.
-
 The client will usually run on:
 
 ```text
 http://localhost:5173
 ```
 
-Open the URL shown in the terminal.
+Open the URL shown in your terminal.
 
-## Install and Run the Server
+### Terminal 2: Run the Server
 
-Open a second terminal from the root project folder.
-
-Move into the server folder:
+Open a second terminal from the root project folder, then move into the server folder:
 
 ```bash
 cd server
@@ -112,59 +153,29 @@ Start the server in development mode:
 npm run dev
 ```
 
-This runs:
+This runs the server with Nodemon, so backend files restart automatically when changed.
 
-```bash
-nodemon server.js
-```
+## 📜 Client Scripts
 
-Nodemon automatically restarts the server when backend files are changed.
+Run these commands inside the `client` folder:
 
-## Client Scripts
+| Command | Description |
+|---|---|
+| `npm run dev` | Runs the Vite development server |
+| `npm run build` | Builds the client for production |
+| `npm run preview` | Previews the production build locally |
 
-Inside the `client` folder, the following scripts are available:
+## 📜 Server Scripts
 
-```bash
-npm run dev
-```
+Run these commands inside the `server` folder:
 
-Runs the Vite development server.
+| Command | Description |
+|---|---|
+| `npm run dev` | Runs the server using Nodemon |
+| `npm test` | Runs all server tests |
+| `npm run wipe` | Refreshes or wipes the test database |
 
-```bash
-npm run build
-```
-
-Builds the client for production.
-
-```bash
-npm run preview
-```
-
-Previews the production build locally.
-
-## Server Scripts
-
-Inside the `server` folder, the following scripts are available:
-
-```bash
-npm run dev
-```
-
-Runs the server using Nodemon.
-
-```bash
-npm test
-```
-
-Runs all server tests.
-
-```bash
-npm run wipe
-```
-
-Refreshes or wipes the test database.
-
-## Testing the Server
+## 🧪 Testing
 
 The server uses Mocha, Chai, and Chai HTTP for testing.
 
@@ -186,7 +197,7 @@ This runs:
 mocha ./tests/test.*.js --reporter spec --log-level=warn --timeout 10000
 ```
 
-## Refreshing the Test Database
+## 🔄 Refreshing the Test Database
 
 The server includes a database refresh script.
 
@@ -204,18 +215,13 @@ mocha ./tests/database.refresh.js --reporter spec --log-level=warn --timeout 100
 
 Use this when the database needs to be reset before testing.
 
-## Suggested Testing Process
+## 🧭 Suggested Workflow
 
 Before testing the server, refresh the database:
 
 ```bash
 cd server
 npm run wipe
-```
-
-Then run the test suite:
-
-```bash
 npm test
 ```
 
@@ -228,7 +234,7 @@ npm run build
 
 This checks that the client can compile successfully.
 
-## Common Problems
+## 🧯 Common Problems
 
 ### Client Will Not Start
 
@@ -236,11 +242,6 @@ Make sure you are inside the correct folder:
 
 ```bash
 cd client
-```
-
-Then reinstall dependencies and run the client:
-
-```bash
 npm install
 npm run dev
 ```
@@ -251,11 +252,6 @@ Make sure you are inside the server folder:
 
 ```bash
 cd server
-```
-
-Then reinstall dependencies and run the server:
-
-```bash
 npm install
 npm run dev
 ```
@@ -274,7 +270,7 @@ Node ^20.19.0 or >=22.12.0
 
 If the client or server port is already being used, stop the other application using that port.
 
-You can also check the terminal output because Vite may automatically choose another available port.
+Vite may also automatically choose another available port, so check the terminal output.
 
 ### Client Cannot Connect to Server
 
@@ -298,7 +294,7 @@ npm test
 
 ### Dependencies Not Working
 
-Delete `node_modules` and reinstall.
+Delete `node_modules` and reinstall dependencies.
 
 On macOS/Linux:
 
