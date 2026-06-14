@@ -12,7 +12,7 @@
 
 ## 📖 Overview
 
-Velocity Motors is a full-stack vehicle marketplace application. The project is split into a Vue/ client and Node/Express server that uses SQLite.
+Velocity Motors is a full-stack vehicle marketplace application. The project is split into a Vue client and Node/Express server that uses SQLite.
 
 Letting users work with a vehicle marketplace through a modern frontend and a backend API. The client handles the user interface, routing, and page experience, while the server handles API logic, validation, database access, logging, and tests.
 
