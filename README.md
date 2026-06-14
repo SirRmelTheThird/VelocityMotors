@@ -24,7 +24,7 @@ The client and server run separately, so you will usually need two terminals ope
 - Vue Router page navigation
 - Bootstrap styling
 - Bootstrap Icons support
-- Node.js and Express backend
+- Node and Express backend
 - SQLite database
 - Server-side validation with Joi
 - Backend tests using Mocha, Chai, and Chai HTTP
