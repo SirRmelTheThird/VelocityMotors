@@ -4,7 +4,7 @@
 
 ![Vue](https://img.shields.io/badge/Vue-3-42B883)
 ![Vite](https://img.shields.io/badge/Vite-Client-646CFF)
-![Node.js](https://img.shields.io/badge/Node.js-Server-339933)
+![Node](https://img.shields.io/badge/Node.js-Server-339933)
 ![Express](https://img.shields.io/badge/Express-API-000000)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57)
 
