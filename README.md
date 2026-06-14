@@ -20,8 +20,7 @@ The client and server run separately, so you will usually need two terminals ope
 
 ## ✨ Features
 
-- Vue 3 frontend
-- Vite development server
+- Vue frontend
 - Vue Router page navigation
 - Bootstrap styling
 - Bootstrap Icons support
@@ -44,22 +43,18 @@ The client and server run separately, so you will usually need two terminals ope
 
 ### Client
 
-- Vue 3
-- Vue Router
-- Vite
+- VueJS
 - Bootstrap
-- Bootstrap Icons
 - Email Validator
 
 ### Server
 
-- Node.js
+- Node
 - Express
 - SQLite
 - Joi
 - Mocha
 - Chai
-- Chai HTTP
 - Nodemon
 - CORS
 - Morgan
