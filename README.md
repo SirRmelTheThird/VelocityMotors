@@ -10,8 +10,7 @@
 
 </div>
 
-<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/198e996b-b9e4-4b0a-a6ad-e08495871c10" />
-
+<img src="https://github.com/SirRmelTheThird/VelocityMotos/blob/main/VelocityMotors/docs/demo.gif?raw=true" alt="VelocityMotors Demo"/>
 
 ## 📖 Overview
 
