@@ -4,13 +4,13 @@
 
 ![Vue](https://img.shields.io/badge/Vue-3-42B883)
 ![Vite](https://img.shields.io/badge/Vite-Client-646CFF)
-![Node](https://img.shields.io/badge/Node.js-Server-339933)
+![Node](https://img.shields.io/badge/Node-Server-339933)
 ![Express](https://img.shields.io/badge/Express-API-000000)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57)
 
 </div>
 
-<img src="https://github.com/SirRmelTheThird/VelocityMotos/blob/main/VelocityMotors/docs/demo.gif?raw=true" alt="VelocityMotors Demo"/>
+<img src="https://github.com/SirRmelTheThird/VelocityMotors/blob/main/VelocityMotors/docs/demo.gif?raw=true" alt="VelocityMotors Demo"/>
 
 ## 📖 Overview
 
@@ -39,7 +39,7 @@ The client and server run separately, so you will usually need two terminals ope
 | Folder | Description |
 |---|---|
 | `client` | Vue |
-| `server` | REST API |
+| `server` | Express |
 
 ## 🛠️ Technologies Used
 
@@ -264,8 +264,7 @@ Node ^20.19.0 or >=22.12.0
 
 ### Port Already in Use
 
-If the client or server port is already being used, stop the other application using that port.
-
+>If the client or server port is already being used, stop the other application using that port.
 Vite may also automatically choose another available port, so check the terminal output.
 
 ### Client Cannot Connect to Server
