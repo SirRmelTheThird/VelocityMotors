@@ -2,11 +2,11 @@
 
 # 🚗 Velocity Motors
 
-![Vue](https://img.shields.io/badge/Vue-3-42B883)
-![Vite](https://img.shields.io/badge/Vite-Client-646CFF)
-![Node](https://img.shields.io/badge/Node-Server-339933)
-![Express](https://img.shields.io/badge/Express-API-000000)
-![SQLite](https://img.shields.io/badge/SQLite-Database-003B57)
+[![Vue](https://img.shields.io/badge/Vue-3-42B883.svg?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-Client-646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Node](https://img.shields.io/badge/Node-Server-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-API-000000.svg?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57.svg?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 
 </div>
 
